@@ -392,6 +392,11 @@ nnoremap <Leader>s :wa<CR>
 "" Select all the buffer content
 noremap <C-a> ggVG<CR>
 
+"" Clipboard
+vnoremap <C-c> "+y
+vnoremap <C-x> "+d
+inoremap <C-v> <ESC>"+pa
+
 "" Open split windows
 noremap <silent> <Leader>sh :<C-u>split<CR>
 noremap <silent> <Leader>sv :<C-u>vsplit<CR>
